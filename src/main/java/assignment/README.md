@@ -6,19 +6,19 @@
 
 During lectures, we have discussed binary tree traversals. Your first task is to implement recursive methods to do preorder, inorder and postorder traversals. This should be a simple task, based on pseudocodes seen in lecture, and take only a few minutes to code and test. More specifically complete the following methods inside LinkedBinarySearchTree class:
 
->exercise01 
+>task01 
 
 Inside class _LinkedBinarySearchTree_ complete the code for 
 
 _void preorderRecursive(Node)_
 
->exercise02
+>task02
 
 Inside class _LinkedBinarySearchTree_ complete the code for
 
 _void inorderRecursive(Node)_
 
->exercise03
+>task03
 
 Inside class _LinkedBinarySearchTree_ complete the code for
 
