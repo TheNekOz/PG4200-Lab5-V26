@@ -1,4 +1,6 @@
-# Oppgave-mal
+# Welcome to the Lab practice 5 for PG4200 Algorithms & Data Structures Spring 26 Bergen
+
+## Oppgave-mal
 
 > For å jobbe med oppgaven, skal du plassere koden din i denne `src/main/java/assignment`-mappen.
 
