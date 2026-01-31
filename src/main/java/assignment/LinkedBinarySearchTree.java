@@ -90,22 +90,13 @@ public class LinkedBinarySearchTree<E extends Comparable<? super E>> implements 
      *****************************************************************/
 
     /**
-     * Caller method for preorder recursive printing
-     */
-    public void printPreorderRecursive() {
-        System.out.print("Recursive Preorder Printing: ");
-        preorderRecursive(root);
-        System.out.println();
-    }
-
-    /**
      * Caller method for preorder recursive traversing
      */
     public void startPreorderRecursive() {
         orderedList.clear();
-        System.out.print("Recursive Preorder Traversing: ");
-        preorderRecursive(root);
-        System.out.println();
+         preorderRecursive(root);
+
+
     }
 
     /**
@@ -113,8 +104,8 @@ public class LinkedBinarySearchTree<E extends Comparable<? super E>> implements 
      *
      * @param curr The current element
      */
-    public void preorderRecursive(Node<E> curr) {
-        System.out.print(curr.elem + ", ");
+    private void preorderRecursive(Node<E> curr) {
+
         orderedList.add(curr.elem);
         if (curr.left != null) {
             preorderRecursive(curr.left);
@@ -124,23 +115,14 @@ public class LinkedBinarySearchTree<E extends Comparable<? super E>> implements 
         }
     }
 
-    /**
-     * Caller method for inorder recursive printing
-     */
-    public void printInorderRecursive() {
-        System.out.print("Recursive Inorder Printing: ");
-        inorderRecursive(root);
-        System.out.println();
-    }
 
     /**
      * Caller method for inorder recursive traversing
      */
     public void startInorderRecursive() {
         orderedList.clear();
-        System.out.print("Recursive Preorder Traversing: ");
         inorderRecursive(root);
-        System.out.println();
+
     }
 
     /**
@@ -153,21 +135,10 @@ public class LinkedBinarySearchTree<E extends Comparable<? super E>> implements 
             inorderRecursive(curr.left);
         }
         orderedList.add(curr.elem);
-        System.out.print(curr.elem + ", ");
 
         if (curr.right != null) {
             inorderRecursive(curr.right);
         }
-    }
-
-
-    /**
-     * Caller method for postorder recursive printing
-     */
-    public void printPostorderRecursive() {
-        System.out.print("Recursive Postorder Printing: ");
-        postorderRecursive(root);
-        System.out.println();
     }
 
     /**
@@ -175,9 +146,7 @@ public class LinkedBinarySearchTree<E extends Comparable<? super E>> implements 
      */
     public void startPostorderRecursive() {
         orderedList.clear();
-        System.out.print("Recursive Postorder Printing: ");
         postorderRecursive(root);
-        System.out.println();
     }
 
     /**
@@ -194,7 +163,6 @@ public class LinkedBinarySearchTree<E extends Comparable<? super E>> implements 
             postorderRecursive(curr.right);
         }
         orderedList.add(curr.elem);
-        System.out.print(curr.elem + ", ");
     }
 
 

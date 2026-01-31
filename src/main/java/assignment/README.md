@@ -4,7 +4,28 @@
 
 ## Binary tree traversals
 
-During lectures, we have discussed binary tree traversals. Your first task is to implement recursive methods to do preorder, inorder and postorder traversals. This should be a simple task, based on pseudocodes seen in lecture, and take only a few minutes to code and test. More specifically complete the following methods inside LinkedBinarySearchTree class:
+During lectures, we have discussed binary tree traversals. 
+Your first task is to implement recursive methods to do 
+preorder, inorder and postorder traversals. 
+This should be a simple task, based on pseudocodes seen in lecture, 
+and take only a couple of minutes to code and test. 
+More specifically complete the following methods 
+inside LinkedBinarySearchTree class.
+
+>task00
+ 
+But first study the class 
+LinkedBinarySearchTree to recap 
+how a binary tree can be implemented in Java.
+We learn that each node has 4 fields: element, parent , left and right.
+And we may study how nodes are inserted in the method _insert_.
+
+In the compact Sourcefile TestTree you find a
+list 
+{3, 5, 7, 1, 4, 2, 51, 17, 43, 28, 47, 89, 6}
+ that is used to generate the tree.
+
+Draw the binary tree yourself and compare it to TODO.
 
 >task01 
 
@@ -34,7 +55,7 @@ You may need to review [information about the Interface Iterator<E>](https://doc
 
 The hardest method to implement for class _InorderIterator implements Iterator_ is _next()_ as it entails to figure out from the current node of your iterator, who is the next node to be visited in an inorder traversal of the tree. The same is true for class _PreorderIterator implements Iterator_.
 
-The pseudocode of the algorithms to do these tasks can be found in the file _DGD5-traversalNext.txt_.
+The pseudocode of the algorithms to do these tasks can be found in the file _Lab5-traversalNext.txt_.
 
 ## Task details:
 
