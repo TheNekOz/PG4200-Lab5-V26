@@ -11,7 +11,6 @@ import java.util.Iterator;
 /**
  * Test class for tree traversal lab
  *
- * @author Lachlan Plant
  */
 public class TestTree {
 

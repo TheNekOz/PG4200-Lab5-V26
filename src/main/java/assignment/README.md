@@ -4,6 +4,8 @@
 
 ## Binary tree traversals
 
+Taken, revised and heavily modified from https://github.com/fletchto99/CSI2110/tree/master .
+
 During lectures, we have discussed binary tree traversals. 
 Your first task is to implement recursive methods to do 
 preorder, inorder and postorder traversals. 
@@ -33,17 +35,26 @@ Inside class _LinkedBinarySearchTree_ complete the code for
 
 _void preorderRecursive(Node)_
 
+Hint: you call the method recursively on a node and its children.
+ The crucial part is where to insert the element of the current 
+to the instance ArrayList _orderedList_ with
+_orderedList.add(curr.elem)_. 
+
 >task02
 
 Inside class _LinkedBinarySearchTree_ complete the code for
 
 _void inorderRecursive(Node)_
 
+Hint: same hint as for task01.
+
 >task03
 
 Inside class _LinkedBinarySearchTree_ complete the code for
 
 _void postorderRecursive(Node)_
+
+Hint: same hint as for task01.
 
 ## Extra task : Binary tree iterators
 
@@ -56,6 +67,8 @@ You may need to review [information about the Interface Iterator<E>](https://doc
 The hardest method to implement for class _InorderIterator implements Iterator_ is _next()_ as it entails to figure out from the current node of your iterator, who is the next node to be visited in an inorder traversal of the tree. The same is true for class _PreorderIterator implements Iterator_.
 
 The pseudocode of the algorithms to do these tasks can be found in the file _Lab5-traversalNext.txt_.
+
+> the last two tests in `test/java/assignment/TestAssignment.java` are commented. You may remove the comment chars to test if you want.
 
 ## Task details:
 

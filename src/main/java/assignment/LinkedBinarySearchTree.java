@@ -95,8 +95,6 @@ public class LinkedBinarySearchTree<E extends Comparable<? super E>> implements 
     public void startPreorderRecursive() {
         orderedList.clear();
          preorderRecursive(root);
-
-
     }
 
     /**
@@ -105,14 +103,7 @@ public class LinkedBinarySearchTree<E extends Comparable<? super E>> implements 
      * @param curr The current element
      */
     private void preorderRecursive(Node<E> curr) {
-
-        orderedList.add(curr.elem);
-        if (curr.left != null) {
-            preorderRecursive(curr.left);
-        }
-        if (curr.right != null) {
-            preorderRecursive(curr.right);
-        }
+        // Your code task 1
     }
 
 
@@ -131,14 +122,7 @@ public class LinkedBinarySearchTree<E extends Comparable<? super E>> implements 
      * @param curr The current element
      */
     private void inorderRecursive(Node<E> curr) {
-        if (curr.left != null) {
-            inorderRecursive(curr.left);
-        }
-        orderedList.add(curr.elem);
-
-        if (curr.right != null) {
-            inorderRecursive(curr.right);
-        }
+        // Your code task 2
     }
 
     /**
@@ -155,14 +139,7 @@ public class LinkedBinarySearchTree<E extends Comparable<? super E>> implements 
      * @param curr The current element
      */
     private void postorderRecursive(Node<E> curr) {
-        if (curr.left != null) {
-            postorderRecursive(curr.left);
-        }
-
-        if (curr.right != null) {
-            postorderRecursive(curr.right);
-        }
-        orderedList.add(curr.elem);
+        // Your code task 3
     }
 
 
@@ -203,32 +180,13 @@ public class LinkedBinarySearchTree<E extends Comparable<? super E>> implements 
         }
 
         public boolean hasNext() {
-            return next != null;
+            // Your code Extra task 1
+            return false;
         }
 
         public E next() {
-            E current = next.elem;
-            Node<E> parent;
-            Node<E> child;
-            if (next.left != null) {
-                next = next.left;
-            } else {
-                if (next.right != null) {
-                    next = next.right;
-                } else {
-                    parent = next.parent;
-                    child = next;
-                    while (parent != null && (parent.right == child || parent.right == null)) {
-                        child = parent;
-                        parent = parent.parent;
-                    }
-                    if (parent == null) {
-                        next = null;
-                    } else {
-                        next = parent.right;
-                    }
-                }
-            }
+            // Your code Extra task 1
+            E current = root.elem;
             return current;
         }
 
@@ -254,29 +212,13 @@ public class LinkedBinarySearchTree<E extends Comparable<? super E>> implements 
         }
 
         public boolean hasNext() {
-            return next != null;
+            // Your code Extra task 2
+            return false;
         }
 
         public E next() {
-            E current = next.elem;
-            if (next.right != null) {
-                next = next.right;
-                while (next.left != null) {
-                    next = next.left;
-                }
-            } else {
-                while (true) { //If you can, go up till you came from the left
-                    if (next.parent == null) {
-                        next = null;
-                        break;
-                    }
-                    if (next.parent.left == next) {
-                        next = next.parent;
-                        break;
-                    }
-                    next = next.parent;
-                }
-            }
+            // Your code Extra task 2
+            E current = root.elem;
             return current;
         }
 

@@ -67,6 +67,7 @@ public class TestAssignment extends BaseAssignment
         Assertions.assertIterableEquals(tree.getOrderedList(), testOrder, "This is not in postorder.");
 
     }
+    /***  Extra tasks -- remove this line and line 122 to test
     @DisplayName("ExtraTask #01 Title")
     @Test
     @Order(4)
@@ -108,5 +109,6 @@ public class TestAssignment extends BaseAssignment
         Assertions.assertIterableEquals(inOrder, testOrder, "This is not in inorder.");
 
     }
+    remove this line to test extra ***/
 
 }
