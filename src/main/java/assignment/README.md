@@ -27,7 +27,7 @@ list
 {3, 5, 7, 1, 4, 2, 51, 17, 43, 28, 47, 89, 6}
  that is used to generate the tree.
 
-Draw the binary tree yourself and compare it to TODO.
+Draw the binary tree yourself and compare it to `BinSearchTree.png` in the `solution`-folder..
 
 >task01 
 
